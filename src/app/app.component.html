@@ -1,0 +1,23 @@
+<h1>Codificación Huffman</h1>
+<div class="structure">
+  <mat-form-field class="example-form-field">
+    <mat-label>Ingrese la cantidad de probabilidades</mat-label>
+    <input matInput type="number" [(ngModel)]="numeroIngresado">
+  </mat-form-field>
+
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="crearInputs()">Siguiente</button>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div *ngFor="let input of inputsAdicionales" class="example-column">
+    <label for="">Probabilidad
+    </label>
+    <mat-form-field class="example-form-field">
+      <input matInput type="number" [value]="">
+    </mat-form-field>
+  </div>
+</div>
